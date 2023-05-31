@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotwheeler</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HotWheeler</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/micss.css" rel="stylesheet">   <!--mi Css personalizado-->
+</head>
+
+<body>
+    
+	<div style="background-image: url(images/home/header-background.jpg); height: 250px;"> </div> <!--Imagen Superior-->
+        <!--header-bottom-->
+        <div style="background-color: rgba(252, 252, 252, 0.925);"   class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+                           <div style="padding-right: 20px ;"   class="logo pull-left">
+                                <a href="myhome.html"><img src="images/home/logo.png" alt="" /></a>
+                            </div>
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li class="dropdown"><a href="#">Tienda<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Products</a></li>
+										<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html">Checkout</a></li> 
+										<li><a href="cart.html">Carro</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>
+                                </li> 
+									<li><a href="contact-us.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<!--/Boton para abrir el Modal-->
+							<button id="verCarrito" class="btn btn-warning" style="font-size: large;">Carrito 🛒</button> 
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+
+
+
+<!-- mi Modal -->
+<div id="modal-container" class="modal-container"> </div>
+
+<!-- mi Contenido del carrito -->
+<div id="carrito-content"></div>
+
+
+
+<!--Seccion Media- Productos !!-->
+
+<div id="container-products" class="container"></div> <!-- contenedor de mis productos donde se crean las Cards !!-->
+
+
+<div id="separador" style="height: 300px;" ></div>
+
+<footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0">
+	        <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	    </p>
+        <p class="m-0 mbt">
+        	<a href="#" class="link">Política de privacidad</a> ·
+        	<a href="#" class="link">Aviso legal</a> ·
+        	<a href="#" class="link">Cookies</a>
+		</p>
+        <p class="m-0 mbt1">&copy; By Mauro Granero</p>
+      </div>
+</footer>
+
+
+
+
+<script src="js/productos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
